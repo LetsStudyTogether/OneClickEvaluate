@@ -10,6 +10,7 @@ async function clickonit()	{
 		$("input[value^='评教']")[0].click()
 	}
 	else	{
+		alert('Finish!');
 		return;
 	}
 	await sleep(3000);
