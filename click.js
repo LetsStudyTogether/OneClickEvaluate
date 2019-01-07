@@ -26,7 +26,7 @@ async function clickonit(sleeptime) {
     $("#sumbitId").hide();
     $("#btnWait").show();
     await sleep(sleeptime);
-    clickonit();
+    clickonit(sleeptime);
 }
 
 $("a[href*='eva']").click();
@@ -35,4 +35,4 @@ $("td[val=42]").click();
 $("td[index=19]").click();
 $("input[type=submit]").click();
 await sleep(sleeptime);
-clickonit();
+clickonit(sleeptime);
