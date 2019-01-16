@@ -1,3 +1,4 @@
+
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -29,10 +30,14 @@ async function clickonit(sleeptime) {
     clickonit(sleeptime);
 }
 
-$("a[href*='eva']").click();
-await sleep(sleeptime);
-$("td[val=42]").click();
-$("td[index=19]").click();
-$("input[type=submit]").click();
-await sleep(sleeptime);
-clickonit(sleeptime);
+async function run(sleeptime)   {
+    $("a[href*='eva']").click();
+    await sleep(sleeptime);
+    $("td[val=42]").click();
+    $("td[index=19]").click();
+    $("input[type=submit]").click();
+    await sleep(sleeptime);
+    clickonit(sleeptime);
+}
+
+run(sleeptime);
