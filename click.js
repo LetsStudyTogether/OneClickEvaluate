@@ -33,8 +33,8 @@ async function clickonit(sleeptime) {
 async function run(sleeptime)   {
     $("a[href*='eva']").click();
     await sleep(sleeptime);
-    $("td[val=4062]").click();
-    $("td[index=19]").click();
+    $("td[val=4083]").click();
+    $("td[index=20]").click();
     $("input[type=submit]").click();
     await sleep(sleeptime);
     clickonit(sleeptime);
